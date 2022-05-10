@@ -14,17 +14,29 @@ const sidebarBody = () => {
       <a href="#followBtn" class="btn btn-primary">Follow</a>
       <a href="#sponsorBtn" class="btn btn-primary">Sponsor</a>
       <a href="#ellipsisBtn" class="btn btn-primary">...</a>
-      <p id= "userStats" class="card-text"><span class="iconify" data-icon="octicon:people-16" style="color: lightgray;" data-width="1" data-height="1"></span> # followers • # following • <span class="iconify" data-icon="cil:star" style="color: lightgray;" data-width="1" data-height="1"></span> favorites </p>
-      <p id="userLocation" class="card-text"> <span class="iconify" data-icon="ci:location-outline" style="color: lightgray;" data-width="1" data-height="1"></span> ${user.location}</p>
-      <p id="userEmail" class="card-text"><span class="iconify" data-icon="carbon:email" style="color: lightgray;" data-width="1" data-height="1"></span> ${user.email}</p>
-      <p id="userWebsite" class="card-text"><span class="iconify" data-icon="akar-icons:link-chain" style="color: lightgray;" data-width="1" data-height="1"></span> ${user.website}</p>
-      <p id="userTwitter" class="card-text"><span class="iconify" data-icon="icon-park-solid:twitter" style="color: lightgray;" data-width="1" data-height="1"></span> Twitter handle</p>
+      <span class="iconify" data-icon="octicon:people-16" style="color: lightgray;" data-width="1" data-height="1"></span>
+      <p id= "userStats1" class="card-text"> followers</p>
+      <span class="iconify" data-icon="cil:star" style="color: lightgray;" data-width="1" data-height="1"></span>
+      <p id= "userStats2" class="card-text">following</p>
+      <span class="iconify" data-icon="cil:star" style="color: lightgray;" data-width="1" data-height="1"></span>
+      <p id= "userStats3" class="card-text">favorites</p>
+      <span class="iconify" data-icon="ci:location-outline" style="color: lightgray;" data-width="1" data-height="1"></span>
+      <p id="userLocation" class="card-text">${user.location}</p>
+      <span class="iconify" data-icon="carbon:email" style="color: lightgray;" data-width="1" data-height="1"></span>
+      <p id="userEmail" class="card-text">${user.email}</p>
+      <span class="iconify" data-icon="akar-icons:link-chain" style="color: lightgray;" data-width="1" data-height="1"></span>
+      <p id="userWebsite" class="card-text">${user.website}</p>
+      <span class="iconify" data-icon="icon-park-solid:twitter" style="color: lightgray;" data-width="1" data-height="1"></span>
+      <p id="userTwitter" class="card-text">Twitter handle</p>
     </div>
     <div>
       <h4>Highlights</h4>
-      <p id="isArcticContributor" class="card-text"><span class="iconify" data-icon="charm:north-star" style="color: lightgray;" data-width="1" data-height="1"></span> Arctic Code Vault Contributor</p>
-      <p id="isGithubStar" class="card-text"><span class="iconify" data-icon="ant-design:star-filled" style="color: lightgray;" data-width="1" data-height="1"></span> GitHub Star</p>
-      <p id="isPro" class="card-text"><span class="iconify" data-icon="cil:star" style="color: lightgray;" data-width="1" data-height="1"></span> PRO</p>
+      <span class="iconify" data-icon="charm:north-star" style="color: lightgray;" data-width="1" data-height="1"></span>  
+      <p id="isArcticContributor" class="card-text">Arctic Code Vault Contributor</p>
+      <span class="iconify" data-icon="ant-design:star-filled" style="color: lightgray;" data-width="1" data-height="1"></span>
+      <p id="isGithubStar" class="card-text">GitHub Star</p>
+      <span class="iconify" data-icon="cil:star" style="color: lightgray;" data-width="1" data-height="1"></span>
+      <p id="isPro" class="card-text">PRO</p>
     </div>
     <div>
       <h4>Organizations</h4>
