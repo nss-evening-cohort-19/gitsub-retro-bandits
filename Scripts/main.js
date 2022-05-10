@@ -1,6 +1,6 @@
+import sidebarBody from "../Components/sidebar.js"
 import navBar from "../Components/navbar.js";
 
-
-
-
-navBar()
+console.log("Group 2")
+sidebarBody();
+navBar();
