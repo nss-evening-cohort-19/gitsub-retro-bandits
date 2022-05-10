@@ -1,7 +1,9 @@
 import renderToDom from "../Utils/renderToDom.js"
 
+domString = "";
+
 const sidebarBody = () => {
-  `<div class="card">
+  domString = `<div class="card">
   <img src="..." class="card-img-top" alt="user's profile image">
   <div class="card-body">
     <h5 id="userName" class="card-title">${array.key}</h5>
@@ -32,7 +34,5 @@ const sidebarBody = () => {
 </div>`
 renderToDom("#sidebarContainer", domString);
 };
-
-sidebarBody();
 
 export default sidebarBody;
