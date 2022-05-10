@@ -3,4 +3,4 @@ import navBar from "../Components/navbar.js";
 
 console.log("Group 2")
 sidebarBody();
-navBar()
+navBar();
