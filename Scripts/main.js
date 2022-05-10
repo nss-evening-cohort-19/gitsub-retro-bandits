@@ -1,1 +1,6 @@
-console.log("Group 2")
+import navBar from "../Components/navbar.js";
+
+
+
+
+navBar()
