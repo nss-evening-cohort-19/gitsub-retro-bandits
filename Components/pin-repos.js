@@ -4,15 +4,20 @@ import users from "../Data/data.js"
 let domString = "";
 
 const pinRepos = () => {
-  users.forEach((repo) => {
-    domString += 
-    `
-    <input type="checkbox" name="repoName" value="Repo">
-    <label for="repoName">${users.repos.title}</label><br>
-    `
+  users.forEach((user) => {
+    user.repos.forEach((repo) => {
+      domString += 
+      `
+      <form id="pinnedRepoForm">
+        <li class="repoList">
+          <input type="checkbox" name="repoName" value="Repo">
+          <label for="repoName">${repo.title}</label><br>
+        </li>
+      </form>
+      `
+      renderToDom("#pinNewRepos", domString);
+     })
   });
-    renderToDom("#pinNewRepos", domString);
-  };
+}
 
-
-  export default pinRepos();
+  export default pinRepos;
