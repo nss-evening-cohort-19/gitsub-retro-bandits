@@ -9,7 +9,7 @@ const createNewProject = () => {
   <div class="mb-3">
   <label for="exampleFormControlTextarea1" class="form-label">Description (optional)</label>
   <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-  <button type="button" class="btn btn-success">Success</button>
+  <button type="button" class="btn btn-success">Create Project</button>
   </div>
   
   </form>`
