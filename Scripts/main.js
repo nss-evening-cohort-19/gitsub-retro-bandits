@@ -4,9 +4,11 @@ import siteFooter from "../Components/footer.js";
 import eventListeners from "../Components/eventListeners.js"
 import pinRepos from "../Components/pin-repos.js"
 
+
 console.log("Group 2")
 sidebarBody();
 navBar();
 siteFooter();
 eventListeners();
 pinRepos();
+
