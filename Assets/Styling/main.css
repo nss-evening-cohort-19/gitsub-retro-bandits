@@ -9,3 +9,7 @@ body {
   color: light gray;
   margin-left: 50px;
 }
+
+#repoStyleMain {
+  display: flex;
+}
