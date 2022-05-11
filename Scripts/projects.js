@@ -3,6 +3,7 @@ import navBar from "../Components/navbar.js";
 import siteFooter from "../Components/footer.js";
 
 import projectsOnDom from "../Components/projectsOnDom.js"
+import createNewProject from "../Components/createNewProject.js";
 
 
 
@@ -13,3 +14,4 @@ sidebarBody();
 navBar();
 siteFooter();
 projectsOnDom();
+createNewProject()
