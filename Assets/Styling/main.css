@@ -9,3 +9,22 @@ body {
   color: light gray;
   margin-left: 50px;
 }
+
+#repoStyleMain {
+  display: flex;
+}
+
+#pageBodyContainer {
+  display: flex;
+  justify-content: right;
+  flex-wrap: row wrap;
+  width: 60%;
+  margin-right: 50px;
+
+}
+
+#pinNewRepos {
+  display: flex;
+  background-color: white;
+  flex-direction: column;
+}
