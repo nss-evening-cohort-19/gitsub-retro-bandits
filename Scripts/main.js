@@ -9,3 +9,4 @@ sidebarBody();
 navBar();
 siteFooter();
 pinRepos();
+savePins();
