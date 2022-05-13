@@ -1,4 +1,6 @@
 import renderToDom from "../Utils/renderToDom.js"
+import users from "../Data/data.js"
+import repoList from "../Components/repolist.js"
 
 let pinnedRepoArray = [];
 
@@ -7,7 +9,7 @@ formModal = document.querySelector("pinReposBtn-modal");
 //need to finish this method with info from Repos page
 
 const savePins = () => {
-  let domString = "";
+  let domString = " ";
   domString += `
   //REPOS INFO HERE
   `
