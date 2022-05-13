@@ -1,11 +1,20 @@
 import renderToDom from "../Utils/renderToDom.js"
-import pinRepos from "../Components/pin-repos.js"
+import pinnedRepoArray from "../Data/pinnedRepo.js"
 
-pinRepos();
 
-let pinnedRepoArray = [];
+
+
 
 const savePins = () => {
+  const childElements = document.querySelector("#repoList").children;
+  for (let item of childElements) {
+    if (item.tagName == "input" && item.type == "checkbox") {
+      if (item.checked) {
+        pinnedRepoArray.push(item);
+      }
+    }  
+  } 
+
   const formModal = document.querySelector("pinReposBtn-modal");
   let repoContent = ""
   pinnedRepoArray.forEach((repo) => {
@@ -21,22 +30,14 @@ const savePins = () => {
       `
     })
   });
-    
-  const childElements = document.querySelector("#repoList").children;
-  for (let item of childElements) {
-    if (item.tagName == "input" && item.type == "checkbox") {
-      if (item.checked) {
-        pinnedRepoArray.push(item);
-      }
-    }  
-  } 
+  
   renderToDom("#pinnedRepos", repoContent);
   // formModal.hide()
   // form.reset();
 };
   
 
-document.querySelector("#savePinsBtn").addEventListener("click", savePins);
+// document.querySelector("#savePinsBtn").addEventListener("click", savePins);
 
 // const form = document.querySelector('form');
 // form.addEventListener('submit', (e) => {
