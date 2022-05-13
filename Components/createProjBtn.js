@@ -1,3 +1,5 @@
+import users from "../Data/data.js";
+import projectsOnDom from "./projectsOnDom.js";
 
 const createProjBtn = () => {
   const form = document.querySelector('form');
@@ -8,9 +10,16 @@ const createProjBtn = () => {
       projectName: document.querySelector('#projectName').value,
       projectUrl: document.querySelector('#description')
     }
+
+    users.projects.push(newProject)
+    projectsOnDom()
+    console.log(users)
+
   
   })
 
 
 
 }
+
+export default createProjBtn;
