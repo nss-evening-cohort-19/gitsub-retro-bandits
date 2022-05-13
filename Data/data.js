@@ -43,7 +43,7 @@ const users = [
     {
       projectName: 'Goal Board',
       projectUrl: 'https://github.com/users/lesleyjkeyes/projects/1'
-    }
+    },
   ]
   }
 ]
