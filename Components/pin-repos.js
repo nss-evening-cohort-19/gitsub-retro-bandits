@@ -65,6 +65,7 @@ const searchList = () => {
     }
   }
 }
+searchList();
 
 export default pinRepos;
 
