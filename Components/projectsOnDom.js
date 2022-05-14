@@ -5,19 +5,10 @@ import renderToDom from "../Utils/renderToDom.js";
 const projectsOnDom = () => {
   let domString = ''
   users[0].projects.forEach(project => {
-    domString += `<div class="card">
-    <div class="card-header">
-      Project
-    </div>
-    <div class="card-body">
-      <h5 class="card-title">${project.projectName}</h5>
-      <p class="card-text">${project.projectUrl}</p>
-      <a href="#" class="btn btn-primary">Delete Project</a>
-    </div>
-  </div>`
+    domString += `<a href="#" class="list-group-item list-group-item-action"><h3>${project.projectName}</h3><p>${project.projectUrl}</p> </a>` 
     
   });
-  renderToDom("#projects-container", domString)
+  renderToDom("#list-container", domString)
 };
 
 export default projectsOnDom;
