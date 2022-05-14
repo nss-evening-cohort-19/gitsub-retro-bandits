@@ -10,16 +10,19 @@ const users = [
     sponsors: ['Kristen Chandler', 'Micah Stotsky', 'Justin Ferwerda'],
     repos: [
       {
+        id: 1,
         title: 'INDIVIDUAL-PROJECT-sorting-hat',
         repoUrl: 'https://github.com/lesleyjkeyes/INDIVIDUAL-PROJECT-sorting-hat',
-        favorite: false,
+        favorite: true,
       },
       {
+        id:2,
         title: 'LAB-pet-adoption',
         reporUrl: 'https://github.com/lesleyjkeyes/LAB-pet-adoption',
         favorite: false,
       },
       {
+        id: 3,
         title: 'PRACTICE-youtube-player',
         repoUrl: 'https://github.com/lesleyjkeyes/PRACTICE-youtube-player',
         favorite: false,
