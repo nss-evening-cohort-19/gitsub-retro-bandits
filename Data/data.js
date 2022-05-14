@@ -47,6 +47,23 @@ const users = [
       projectName: 'Goal Board',
       projectUrl: 'https://github.com/users/lesleyjkeyes/projects/1'
     },
+    {
+      projectName: 'Word Counter',
+      projectUrl: 'https://github.com/users/Justin-Ferwerda/projects/1'
+    },
+    {
+      projectName: 'Pet adoption',
+      projectUrl: 'https://github.com/Justin-Ferwerda/LAB-pet-adoption'
+  
+    },
+    {
+      projectName: 'Sorting Hat',
+      projectUrl: 'https://github.com/Justin-Ferwerda/INDIVIDUAL-PROJECT-sorting-hat'
+    },
+    {
+      projectName: 'JS methods',
+      projectUrl: 'https://github.com/Justin-Ferwerda/ASSIGNMENT-intro-js-array-methods'
+    }
   ]
   }
 ]
