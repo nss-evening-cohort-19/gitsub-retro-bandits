@@ -11,8 +11,8 @@ const pinRepos = () => {
       user.repos.forEach((repo) => {
        formContent += `
           <li class="sort">
-            <input type="checkbox" id="${repo.title}-input" class="repoName" name="repoName" value="Repo">
-            <label for="${repo.title}-input">${repo.title}</label><br>
+            <input type="checkbox" id="${repo.id}-input" class="repoName" name="repoName" value="Repo">
+            <label for="${repo.id}-input">${repo.title}</label><br>
           </li>
        `
       })
@@ -36,12 +36,9 @@ const pinRepos = () => {
                 </filter>
               </div>
               <div class="modal-body">
-                <ul id="repoList">
-                  ${modalLoop()}
-                </ul>
-              </div>
-              <div class="modal-footer">
-                <button type="submit" id="savePinsBtn" class="btn btn-primary">Save</button>
+                  <ul id="repoList">
+                    ${modalLoop()}
+                  </ul>
               </div>
             </div>
           </div>
