@@ -14,15 +14,6 @@ body {
   display: flex;
 }
 
-#pageBodyContainer {
-  display: flex;
-  justify-content: right;
-  flex-wrap: row wrap;
-  width: 60%;
-  margin-right: 50px;
-
-}
-
 #pinNewRepos {
   display: flex;
   background-color: white;
@@ -47,10 +38,14 @@ body {
 
 #reposStyleMain {
   display: flex;
-  justify-content: center;
+  justify-content: right;
+  flex-wrap: row wrap;
+  align-content: start;
+  width: 60%;
+  margin-right: 50px;
 }
 
-#repo-styling {
+/* #repo-styling {
   position: relative
 }
 
@@ -58,4 +53,5 @@ body {
   position: absolute;
   top: 15%;
   left: 50%;
-}
+  transform: translate(-50%, 50%);
+} */

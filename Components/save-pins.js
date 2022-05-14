@@ -8,9 +8,9 @@ const savePins = (event) => {
     const [id] = event.target.id.split("-")
     const index = users[0].repos.find(data => data.id === parseInt(id));
     const notIncluded = !pinnedRepoArray.includes(index);  
-    if (notIncluded){
+    if (notIncluded) {
       pinnedRepoArray.push(index);
-    } else if (pinnedRepoArray.includes(index)) {
+    } else if (!notIncluded) {
       pinnedRepoArray.splice(index);
     }
   }
