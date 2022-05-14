@@ -1,5 +1,6 @@
 import renderToDom from "../Utils/renderToDom.js"
 import users from "../Data/data.js"
+// import eventListeners from "../Components/event-listeners.js"
 
 let domString = "";
 
@@ -10,8 +11,8 @@ const pinRepos = () => {
       user.repos.forEach((repo) => {
        formContent += `
           <li class="sort">
-            <input type="checkbox" id="${repo.title}-input" class="repoName" name="repoName" value="Repo">
-            <label for="${repo.title}-input">${repo.title}</label><br>
+            <input type="checkbox" id="${repo.id}-input" class="repoName" name="repoName" value="Repo">
+            <label for="${repo.id}-input">${repo.title}</label><br>
           </li>
        `
       })
@@ -27,7 +28,7 @@ const pinRepos = () => {
             <div class="modal-content">
               <div class="modal-header">
                 <h5 class="modal-title">Edit Pinned Items</h5>
-                <button type="submit" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
                 <filter id="filterRepoForm">
@@ -35,12 +36,9 @@ const pinRepos = () => {
                 </filter>
               </div>
               <div class="modal-body">
-                <ul id="repoList">
-                  ${modalLoop()}
-                </ul>
-              </div>
-              <div class="modal-footer">
-                <button type="button" id="savePinsBtn" class="btn btn-primary">Save</button>
+                  <ul id="repoList">
+                    ${modalLoop()}
+                  </ul>
               </div>
             </div>
           </div>
@@ -65,6 +63,7 @@ const searchList = () => {
     }
   }
 }
+
 
 export default pinRepos;
 
