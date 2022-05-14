@@ -34,8 +34,6 @@ const savePins = () => {
 };
   
 
-// document.querySelector("#savePinsBtn").addEventListener("click", savePins);
-
 // const form = document.querySelector('form');
 // form.addEventListener('submit', (e) => {
 //   e.preventDefault(); 
