@@ -4,6 +4,7 @@ import navBar from "../Components/navbar.js";
 import siteFooter from "../Components/footer.js";
 import createNewRepo from "../Components/repoForm.js";
 import createRepoBtn from "../Components/createRepoBtn.js";
+import repoSearch from "../Components/repoSearch.js"
 
 sidebarBody();
 navBar();
@@ -11,3 +12,4 @@ siteFooter();
 repolist();
 createNewRepo();
 createRepoBtn();
+repoSearch()
