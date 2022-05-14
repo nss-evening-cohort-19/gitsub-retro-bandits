@@ -49,3 +49,13 @@ body {
   display: flex;
   justify-content: center;
 }
+
+#repo-styling {
+  position: relative
+}
+
+#repo-container {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+}
