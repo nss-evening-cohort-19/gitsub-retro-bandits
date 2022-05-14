@@ -43,3 +43,9 @@ body {
 #repoList {
   list-style-type: none;
 }
+
+
+#reposStyleMain {
+  display: flex;
+  justify-content: center;
+}
