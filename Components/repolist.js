@@ -2,7 +2,7 @@ import users from "../Data/data.js"
 import renderToDom from "../Utils/renderToDom.js";
 
 const reposArray = users[0].repos
- const repolist = () => {
+ const repolist = (array) => {
   let domString = '';
   for (const item of reposArray) {
     if (item.favorite === false) {
