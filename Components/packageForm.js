@@ -6,15 +6,17 @@ import packageCards from "./packageCards.js";
 const packageForm = () => {
     const domString = `
     <div class="mb-3">
-        <form>
-            <label for="exampleFormControlInput1" class="form-label">New Package</label>
-            <input type="email" class="form-control" id="packageName" placeholder="New Package Name">
-            </div>
-            <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">Package Description</label>
-            <textarea class="form-control" id="packageDescription" rows="3"></textarea>
+        <form id="form">
 
-            <button type="submit" class="btn btn-light" id="submit">Submit</button>
+        <div class="form-floating mb-3">
+        <input type="text" class="form-control" id="packageName" placeholder="name@example.com">
+        <label for="floatingInput">New Package Name</label>
+      </div>
+      <div class="form-floating">
+        <input type="text" class="form-control" id="packageDescription" placeholder="Password">
+        <label for="floatingPassword">Description</label>
+      </div>
+           <button type="submit" class="btn btn-light" id="submit">Submit</button>
         </form>
     </div>
 
