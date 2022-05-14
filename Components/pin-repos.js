@@ -1,6 +1,6 @@
 import renderToDom from "../Utils/renderToDom.js"
 import users from "../Data/data.js"
-import eventListeners from "../Components/event-listeners.js"
+// import eventListeners from "../Components/event-listeners.js"
 
 let domString = "";
 

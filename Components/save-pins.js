@@ -2,9 +2,6 @@ import renderToDom from "../Utils/renderToDom.js"
 import pinnedRepoArray from "../Data/pinnedRepo.js"
 
 
-
-
-
 const savePins = () => {
   const childElements = document.querySelector("#repoList").children;
   for (let item of childElements) {
