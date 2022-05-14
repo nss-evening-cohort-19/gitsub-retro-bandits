@@ -1,18 +1,20 @@
 import renderToDom from "../Utils/renderToDom.js";
 
 const createNewRepo = () => {
-  let domString = `<form id="new-project-form">
-  <div class="mb-3">
-  <label for="exampleFormControlInput1" class="form-label">Repository name</label>
-  <input type="project" class="form-control" id="repoName" placeholder="Repository name" required>
-  </div>
-  <div class="mb-3">
-  <label for="description" class="form-label">Description (optional)</label>
-  <textarea class="form-control" id="repoDescription" rows="3"></textarea>
-  <button type="submit" class="btn btn-success">Create Repository</button>
-  </div>
-  
-  </form>`
+  let domString = `<div class="mb-3">
+  <form id="new-repo-form">
+
+  <div class="form-floating mb-3">
+  <input type="text" class="form-control" id="repoName" placeholder="name@example.com">
+  <label for="floatingInput">New Repo Name</label>
+</div>
+<div class="form-floating">
+  <input type="text" class="form-control" id="repoDescription" placeholder="Password">
+  <label for="floatingPassword">Description</label>
+</div>
+     <button type="submit" class="btn btn-light" id="submit">Submit</button>
+  </form>
+</div>`
 
 
 
