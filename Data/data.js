@@ -13,7 +13,7 @@ const users = [
         id: 1,
         title: 'INDIVIDUAL-PROJECT-sorting-hat',
         repoUrl: 'https://github.com/lesleyjkeyes/INDIVIDUAL-PROJECT-sorting-hat',
-        favorite: false,
+        favorite: true,
       },
       {
         id:2,

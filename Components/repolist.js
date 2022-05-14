@@ -2,7 +2,7 @@ import users from "../Data/data.js"
 import renderToDom from "../Utils/renderToDom.js";
 
 const reposArray = users[0].repos
-export const repolist = () => {
+ const repolist = () => {
   let domString = '';
   for (const item of reposArray) {
     if (item.favorite === false) {
@@ -26,7 +26,7 @@ export const repolist = () => {
   }
 }
 
-export const toggleFavorite = (object, index) => {
+ const toggleFavorite = (object, index) => {
   if (object.favorite === false) {
     const newObject = {
       id: object.id,
@@ -48,11 +48,13 @@ export const toggleFavorite = (object, index) => {
   }
 }
 
-export const starred = document.querySelector("#repo-container")
-starred.addEventListener('click', (e) => {
+ const starred = document.querySelector("#repo-container")
+  starred.addEventListener('click', (e) => {
   const [method, id] = e.target.id.split("--")
   const index = reposArray.findIndex((repoIndex => repoIndex.id === Number(id)))
   
   toggleFavorite(reposArray[index], index)
   repolist()
 })
+
+export default repolist
