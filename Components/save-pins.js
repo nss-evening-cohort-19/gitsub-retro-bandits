@@ -1,34 +1,43 @@
 import renderToDom from "../Utils/renderToDom.js"
+import pinnedRepoArray from "../Data/pinnedRepo.js"
+import data from "../Data/data.js" 
 
-let pinnedRepoArray = [];
-
-formModal = document.querySelector("pinReposBtn-modal");
-
-//need to finish this method with info from Repos page
-
-const savePins = () => {
-  let domString = "";
-  domString += `
-  //REPOS INFO HERE
-  `
-  const childElements = document.querySelector("#repoList").children;
-  for (item of childElements) {
-    if (item.tagName == "input" && item.type == "checkbox") {
-      if (item.checked) {
-        pinnedRepoArray.push(item);
-        renderToDom("#pinnedRepos", domString);
-        formModal.hide()
-        form.reset();
-      }
-    }  
-  } 
+const savePins = (event) => {
+  console.log(event.target.id);
+  if (event.target.id.includes("-input")) {
+    const [id] = event.target.id.split("-")
+    const index = data.findIndex(datas => datas.id === parseInt(id));  
+    if (pinnedRepoArray.includes(index)){
+      pinnedRepoArray.splice(index);
+    } else {
+    pinnedRepoArray.push(index);
+    }
+    // check if item is inside pinnedRepoArray
+    //  if yes => remove (splice) 
+    // if no => add to pinnedRepoArray
+  }
 }
 
-document.querySelector("savePinsBtn").addEventListener("submit", savePins);
+const reposOnDom = (repo) => {
+  let repoContent = ""
+  pinnedRepoArray.forEach((repo) => {
+    repo.forEach((repository) => {
+      repoContent += `
+        <div>
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+            <a href="${repository.repoUrl}" class="card-link">${repository.name}</a>
+            </div>
+          </div>
+        </div>
+      `
+    })
+  });
+  
+  renderToDom("#pinnedRepos", repoContent);
+};
+  
 
-const form = document.querySelector('form');
-form.addEventListener('submit', (e) => {
-  e.preventDefault(); 
-});
+
 
 export default savePins
