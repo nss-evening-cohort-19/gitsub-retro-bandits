@@ -16,6 +16,7 @@ const createProjBtn = () => {
     users[0].projects.push(newProject);
     projectsOnDom();
     console.log(users);
+    form.reset()
   
   });
 
