@@ -15,7 +15,7 @@ const packageCards = () => {
             <div class="card-body">
                 <h5 class="card-title">${packs.packageName}</h5>
                 <p class="card-text">${packs.packageDescription}</p>
-                <a href="#" class="btn btn-primary">Learn More</a>
+                <a href="#" class="btn btn-primary btnPadding">Learn More</a>
                 
             </div>
         </div>

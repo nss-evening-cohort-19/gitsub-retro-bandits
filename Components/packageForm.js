@@ -16,7 +16,7 @@ const packageForm = () => {
         <input type="text" class="form-control" id="packageDescription" placeholder="Password">
         <label for="floatingPassword">Description</label>
       </div>
-           <button type="submit" class="btn btn-light" id="submit">Submit</button>
+           <button type="submit" class="btn btn-light btnPadding" id="submit">Submit</button>
         </form>
     </div>
 

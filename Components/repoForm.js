@@ -12,7 +12,7 @@ const createNewRepo = () => {
   <input type="text" class="form-control" id="repoDescription" placeholder="Password">
   <label for="floatingPassword">Description</label>
 </div>
-     <button type="submit" class="btn btn-light" id="submit">Submit</button>
+     <button type="submit" class="btn btn-light btnPadding" id="submit">Submit</button>
   </form>
 </div>`
 
