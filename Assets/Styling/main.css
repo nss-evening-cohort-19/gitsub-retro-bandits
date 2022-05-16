@@ -188,6 +188,15 @@ input[type=checkbox] {
   margin-left: 3%;
 }
 
-/* @media only screen and (max-width: 1402px) {
-  
-} */
+.card-header {
+  background-color: #b7b8b9;
+  color: black;
+}
+
+#packageCards {
+  display: flex;
+  flex-direction: row wrap;
+}
+ .btnPadding {
+   margin: 8px;
+ }
