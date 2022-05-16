@@ -191,3 +191,8 @@ input[type=checkbox] {
 /* @media only screen and (max-width: 1402px) {
   
 } */
+
+.card-header {
+  background-color: #b7b8b9;
+  color: black;
+}
