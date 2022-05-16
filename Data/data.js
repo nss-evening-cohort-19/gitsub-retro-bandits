@@ -1,12 +1,12 @@
 const users = [
   {
     id: 1,
-    name: 'Lesley Keyes',
-    username: 'lesleyjkeyes',
-    photo: 'https://avatars.githubusercontent.com/u/102479522?v=4',
+    name: 'Retro Bandits',
+    username: 'retrobandits',
+    photo: "../assets/images/retro.jpg",
     location:'Nashville, TN',
-    email: 'lesleyjkeyes@gmail.com',
-    website: 'https://github.com/lesleyjkeyes',
+    email: 'retrobandits@gmail.com',
+    website: 'https://github.com/retrobandits',
     sponsors: ['Kristen Chandler', 'Micah Stotsky', 'Justin Ferwerda'],
     repos: [
       {
