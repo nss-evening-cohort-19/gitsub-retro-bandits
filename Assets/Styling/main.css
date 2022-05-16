@@ -13,7 +13,11 @@ body {
   margin: 1%;
   box-sizing: border-box;
   word-wrap: break-word;
-
+  flex-grow: 1;      /* it can grow */
+  flex-shrink: 1;    /* it can shrink */
+  flex-basis: 40%; /* arbitrary depending on design */
+  min-width: 40%;  /* equal to flex-basis */
+  max-width: 100%;    /* (100% - margins)/number of boxes */
 }
 
 .card {
@@ -26,13 +30,17 @@ body {
   background-color: #0f1117;
   color: #838c96;
   justify-content: center;
+  /* position: fixed; */
+  border-bottom: 0.2px solid;
+  border-color: #838c96;
+  color: #c8d1d9; 
 }
 
 .navi-btn {
   color: #838c96;
   border: 1px;
   border-radius: 6px;
-  border-color: #838c96;;
+  border-color: #838c96;
 }
 
 #footerContainer {
@@ -45,7 +53,7 @@ body {
 
 #sidebarStyle {
   display: flex;
-  width: 20%;
+  width: fit-content;
   color: #838c96;
   margin-top: 10%;
   margin-bottom: 1%;
@@ -95,7 +103,7 @@ body {
 .border-kc {
   border-top: 0.2px solid;
   border-color: #838c96;
-  color: #c8d1d9;  
+  color: #c8d1d9; 
 }
 
 #modal-style {
@@ -127,6 +135,7 @@ input[type=checkbox] {
   border-width: 1px;
   border-color: #838c96;
   color: #838c96;
+  justify-content: space-between;
 }
 
 #name {
@@ -163,3 +172,22 @@ input[type=checkbox] {
 #highlights {
   color: #c8d1d9;  
 }
+
+.avatar {
+  height: auto;
+  display: inline-block;
+  overflow: hidden;
+  line-height: 1;
+  vertical-align: middle;
+  border-radius: 6px;
+  flex-shrink: 0;
+  box-shadow: 0 0 0 1px var(--color-avatar-border);
+  border-radius: 50%;
+  width: 60%;
+  border: 1px solid var(--color-border-default); 
+  margin-left: 3%;
+}
+
+/* @media only screen and (max-width: 1402px) {
+  
+} */

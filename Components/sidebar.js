@@ -2,6 +2,7 @@ import renderToDom from "../Utils/renderToDom.js"
 import users from "../Data/data.js"
 
 let domString = "";
+const sponsor = `<span class="iconify" data-icon="akar-icons:heart" style="color: #fc80a5;" data-width="15" data-height="15"></span>`;
 const followers = `<span class="iconify" data-icon="octicon:people-16" style="color: lightgray;" data-width="15" data-height="15"></span>`;
 const following = `<span class="iconify" data-icon="cil:star" style="color: lightgray;" data-width="15" data-height="15"></span>`;
 const favorites = `<span class="iconify" data-icon="cil:star" style="color: lightgray;" data-width="15" data-height="15"></span>`;
@@ -19,14 +20,15 @@ const sidebarBody = () => {
   users.forEach((user) => {
     domString += `
     <div class="card">
-      <img src="..." class="card-img-top">
+      <img src="${user.photo}" class="card-img-top avatar">
       <div class="card-body">
         <h5 id="name" class="card-title">${user.name}</h5>
         <h4 id="userName" class="card-title">${user.username}</h4>
         <p id="userBio" class="card-text">Bio here</p>
         <a href="#followBtn" class="btn btn-sidebar">Follow</a>
-        <a href="#sponsorBtn" class="btn btn-sidebar">Sponsor</a>
+        <a href="#sponsorBtn" class="btn btn-sidebar">${sponsor} Sponsor</a>
         <a href="#ellipsisBtn" class="btn btn-sidebar">...</a>
+        <p></p>
         <p id= "userStats" class="card-text">${followers} followers ${following} following ${favorites} favorites</p>
         <p id="userLocation" class="card-text">${location} ${user.location}</p>
         <p id="userEmail" class="card-text">${email} ${user.email}</p>
