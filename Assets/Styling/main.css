@@ -191,3 +191,15 @@ input[type=checkbox] {
 /* @media only screen and (max-width: 1402px) {
   
 } */
+
+#list-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: start;
+}
+
+.card-header {
+  background-color: #b7b8b9;
+  color: black;
+}

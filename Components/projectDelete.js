@@ -2,7 +2,7 @@ import users from "../Data/data.js";
 import projectsOnDom from "./projectsOnDom.js";
 
 const deleteProject = () => {
-  document.querySelector('.card').addEventListener('click', (e) => {
+  document.querySelector('#list-container').addEventListener('click', (e) => {
     if (e.target.id) {
       const [method, projectName] = e.target.id.split('--')
 
