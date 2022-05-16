@@ -7,7 +7,7 @@ const pinnedReposOnDom = () => {
   pinnedRepoArray.forEach((repo) => {
       repoContent += `
         <div>
-          <div class="card" style="width: 18rem;">
+          <div class="card repo-card" style="width: 18rem;">
             <div class="card-body">
             <a href="${repo.repoUrl}" class="card-link">${repo.title}</a>
             </div>
