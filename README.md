@@ -1,4 +1,4 @@
-# GITSUB
+# GITSUB - _Retro-Bandits_
 
 # About The Project
    This is the first group project for NSS E-19 front-end development. We were tasked with cloning [github.com](https://github.com/).
