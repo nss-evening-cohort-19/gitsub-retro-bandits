@@ -3,7 +3,7 @@ const users = [
     id: 1,
     name: 'Lesley Keyes',
     username: 'lesleyjkeyes',
-    photo: '',
+    photo: 'https://avatars.githubusercontent.com/u/102479522?v=4',
     location:'Nashville, TN',
     email: 'lesleyjkeyes@gmail.com',
     website: 'https://github.com/lesleyjkeyes',

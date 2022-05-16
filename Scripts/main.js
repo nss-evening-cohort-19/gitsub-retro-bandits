@@ -3,7 +3,7 @@ import navBar from "../Components/navbar.js";
 import siteFooter from "../Components/footer.js";
 import pinRepos from "../Components/pin-repos.js"
 import eventListeners from "../Components/event-listeners.js"
-import reposOnDom from "../Components/repos-on-dom.js"
+import pinnedReposOnDom from "../Components/repos-on-dom.js"
 
 
 console.log("Group 2")
@@ -12,4 +12,4 @@ navBar();
 siteFooter();
 pinRepos();
 eventListeners();
-reposOnDom();
+pinnedReposOnDom();

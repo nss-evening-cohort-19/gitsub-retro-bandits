@@ -25,12 +25,12 @@ const pinRepos = () => {
       <div class="modal fade" id="pinReposBtn-modal" tabindex="-1" aria-labelledby="pinReposBtn-modal" aria-hidden="true">
         <div class="modal-dialog modal-fullscreen-md-down">
           <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
+            <div id="modal-style" class="modal-content">
+              <div class="modal-header modal-border">
                 <h5 class="modal-title">Edit Pinned Items</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <button id="close-modal" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
-              <div class="modal-body">
+              <div class="modal-body modal-border">
                 <filter id="filterRepoForm">
                   <input type="text" id="searchInput" onekeyup="searchList()" placeholder="Filter Repositories">
                 </filter>
